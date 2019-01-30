@@ -1,4 +1,5 @@
-const phoneFromServer = [
+
+const phoneModel = [
     {
         "age": 0,
         "id": "motorola-xoom-with-wi-fi",
@@ -153,8 +154,7 @@ const phoneFromServer = [
         "snippet": "Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service."
     }
 ];
-
-const phoneDetail = {
+const phoneInfo = {
     "additionalFeatures": "",
     "android": {
         "os": "Android 2.2",
@@ -217,18 +217,12 @@ const phoneDetail = {
     }
 };
 
-
-
-
-
-const phoneService = {
+const phoneServices = {
     getAll(){
-        return phoneFromServer
+        return phoneModel
     },
-
-    getById(){
-        return phoneDetail
+    getId(){
+        return phoneInfo
     }
 };
-
-export default phoneService;
+export default phoneServices;
